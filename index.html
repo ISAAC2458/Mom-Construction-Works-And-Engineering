@@ -1,0 +1,2436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom Construction Works and Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+            color: #232323;
+            font-size: 1.08rem;
+            line-height: 1.7;
+            transition: background 0.5s;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #1a237e;
+            margin-bottom: 0.5em;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: 2.5px;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .home-hero h2 {
+            color: #fff;
+            font-size: 2.1rem;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 800;
+        }
+        .service-card h3 {
+            color: #1a237e;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+        }
+        .about h2, .faq-section h2, .partners-section h3, .testimonials-section h3 {
+            color: #1a237e;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+        }
+        nav a {
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        .contact, .contact-info, .faq-answer, .service-card p, .about p, .gallery, .container, .gallery img, .contact input, .contact textarea, .contact button {
+            font-family: 'Lato', Arial, sans-serif;
+        }
+        header {
+            background: linear-gradient(rgba(40,53,147,0.85), rgba(40,53,147,0.7)), url('images 2/contractors.png') center/cover no-repeat;
+            color: #fff;
+            padding: 2.5rem 0 1.2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2.5px;
+            font-weight: 800;
+            text-shadow: 0 3px 16px rgba(0,0,0,0.22);
+        }
+        header nav {
+            margin-top: 1.5rem;
+        }
+        nav {
+            margin-top: 1.2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 600;
+            font-size: 1.13rem;
+            padding: 0.3rem 0.7rem 0.3rem 0.7rem;
+            border-radius: 4px 4px 0 0;
+            border-bottom: 3px solid transparent;
+            transition: color 0.2s, border-bottom 0.3s, background 0.2s;
+            position: relative;
+        }
+        nav a.active, nav a:hover {
+            color: #fff;
+            background: #ffb300;
+            border-bottom: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(255,179,0,0.13);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            background: rgba(255,255,255,0.98);
+            border-radius: 14px;
+            box-shadow: 0 6px 32px rgba(40,53,147,0.10);
+            padding: 2.7rem 2.2rem;
+            min-height: 500px;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        section {
+            display: none;
+            animation: fadeIn 0.8s;
+        }
+        section.active {
+            display: block;
+        }
+        .home-hero {
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+        }
+        .home-hero h2 {
+            color: #283593;
+            font-size: 2.1rem;
+            margin-bottom: 0.7rem;
+        }
+        .home-hero p {
+            font-size: 1.15rem;
+            color: #444;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .service-card {
+            flex: 1 1 220px;
+            background: linear-gradient(135deg, #e3eafc 70%, #fffde7 100%);
+            border-radius: 10px;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 2px 12px rgba(26,35,126,0.08);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.04);
+            box-shadow: 0 8px 32px rgba(26,35,126,0.13);
+        }
+        .service-card h3 {
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+        .about {
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        .about h2 {
+            color: #283593;
+        }
+        .about p {
+            color: #444;
+            font-size: 1.1rem;
+            margin: 0.7rem auto;
+            max-width: 700px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .gallery img {
+            width: 220px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(40,53,147,0.10);
+            transition: transform 0.4s, box-shadow 0.4s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.08) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(255,179,0,0.18);
+        }
+        .contact {
+            text-align: center;
+            background: #fbe9e7;
+            border-radius: 8px;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+            box-shadow: 0 2px 8px rgba(216,67,21,0.07);
+        }
+        .contact h2 {
+            color: #d84315;
+        }
+        .contact-info {
+            font-size: 1.1rem;
+            color: #444;
+            margin: 1rem 0;
+        }
+        .contact form {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .contact input, .contact textarea {
+            width: 90%;
+            max-width: 400px;
+            padding: 0.7rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        .contact input:focus, .contact textarea:focus {
+            border: 1.5px solid #ffb300;
+            outline: none;
+        }
+        .contact button {
+            background: #ffb300;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 2.2rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .contact button:hover {
+            background: #283593;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0 1.2rem 0;
+            background: linear-gradient(rgba(26,35,126,0.85), rgba(26,35,126,0.7)), url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            margin-top: 2rem;
+            font-size: 1.08rem;
+            letter-spacing: 1.2px;
+            position: relative;
+            border-radius: 0 0 14px 14px;
+            box-shadow: 0 -2px 16px rgba(40,53,147,0.10);
+        }
+        @media (max-width: 900px) {
+            .services-list, .gallery {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            header, footer {
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images 2/Construction.png" alt="Mom Construction Works and Engineering Logo" class="site-logo">
+            <span class="site-title">Mom Construction Works and Engineering</span>
+        </div>
+        <nav>
+            <a href="#home" class="active" onclick="showTab(event, 'home')">Home</a>
+            <a href="#services" onclick="showTab(event, 'services')">Our Service</a>
+            <a href="#about" onclick="showTab(event, 'about')">About</a>
+            <a href="#gallery" onclick="showTab(event, 'gallery')">Gallery</a>
+            <a href="#recruitment" onclick="showTab(event, 'recruitment')">Recruitment</a>
+            <a href="#contact" onclick="showTab(event, 'contact')">Contact</a>
+        </nav>
+    </header>
+    <style>
+    .logo-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.2rem;
+        justify-content: flex-start;
+        margin-bottom: 0.5rem;
+    }
+    .site-logo {
+        height: 82px;
+        width: auto;
+        min-width: 82px;
+        vertical-align: middle;
+        display: inline-block;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(40,53,147,0.10);
+        background: #fff;
+        padding: 6px 12px;
+        object-fit: contain;
+        margin-bottom: 0;
+    }
+    .site-title {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: 2.5px;
+        text-shadow: 0 3px 16px rgba(0,0,0,0.22);
+        line-height: 1.1;
+        text-align: left;
+        display: block;
+    }
+    @media (max-width: 900px) {
+        .site-logo {
+            height: 48px;
+            min-width: 48px;
+            padding: 2px 4px;
+        }
+        .site-title {
+            font-size: 1.2rem;
+        }
+        .logo-title {
+            gap: 0.6rem;
+        }
+    }
+    </style>
+    <div class="container">
+        <section id="home" class="active">
+            <div class="home-hero" style="background: linear-gradient(rgba(40,53,147,0.60), rgba(40,53,147,0.30)), url('images 2/contractor2.webp') center/cover no-repeat; color: #fff; border-radius: 14px; box-shadow: 0 4px 24px rgba(40,53,147,0.13); padding: 3.5rem 1rem 2.5rem 1rem; margin-bottom: 2.5rem;">
+                <h2 style="color: #fff; text-shadow: 0 2px 12px rgba(40,53,147,0.25);">Welcome to Mom Construction Works and Engineering</h2>
+                <p style="color: #f5f5f5; text-shadow: 0 1px 8px rgba(40,53,147,0.18);">Building your dreams with quality, reliability, and innovation. We deliver comprehensive construction and engineering solutions for residential, commercial, and industrial projects.</p>
+                <a href="#contact" class="cta-btn" onclick="showTab(event, 'contact')">Get a Free Quote</a>
+            </div>
+            <!-- Homepage Image Slider -->
+            <div class="homepage-slider-section">
+                <div class="homepage-slider" id="homepageSlider">
+                    <div class="slider-slide active">
+                        <img src="images 2/construction-site-standard-gauge-railway-sgr-kenya-railway-line-truck-mombasa-nairobi-city-county-t.jpg" alt="Construction Site">
+                        <div class="slider-caption">Building the Future</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="images 2/contractor2.webp" alt="Contractor at Work">
+                        <div class="slider-caption">Expert Construction Services</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="images 2/Rock1.jpeg" alt="Rock Engineering">
+                        <div class="slider-caption">Engineering Excellence</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="images 2/istockphoto-1590248500-1024x1024.jpg" alt="Modern Building">
+                        <div class="slider-caption">Modern & Sustainable Designs</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="images 2/istockphoto-170961882-1024x1024.jpg" alt="Teamwork on Site">
+                        <div class="slider-caption">Teamwork on Site</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="images 2/istockphoto-1212517234-1024x1024.jpg" alt="Heavy Machinery">
+                        <div class="slider-caption">Heavy Machinery in Action</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="images 2/lawn 1.jpg" alt="Lawn Installation">
+                        <div class="slider-caption">Lawn Installation</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="images 2/lawns design.jpg" alt="Lawns Design">
+                        <div class="slider-caption">Lawns Design</div>
+                    </div>
+                </div>
+                <button class="slider-btn slider-btn-prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="slider-btn slider-btn-next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+        <style>
+        .homepage-slider-section {
+            width: 100%;
+            max-width: 900px;
+            margin: 2.5rem auto 2.5rem auto;
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 32px rgba(40,53,147,0.18);
+        }
+        .homepage-slider {
+            position: relative;
+            width: 100%;
+            height: 320px;
+        }
+        .slider-slide {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: opacity 1s cubic-bezier(.4,0,.2,1);
+        }
+        .slider-slide.active {
+            display: block;
+            opacity: 1;
+            z-index: 2;
+            animation: sliderFadeIn 1.2s;
+        }
+        .slider-slide img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 18px;
+            filter: brightness(0.88) contrast(1.08);
+        }
+        .slider-caption {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(40,53,147,0.82) 60%, rgba(255,179,0,0.38) 100%);
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 800;
+            padding: 1.1rem 2rem;
+            border-radius: 0 0 18px 18px;
+            text-shadow: 0 2px 12px rgba(40,53,147,0.25);
+            letter-spacing: 1px;
+        }
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(40,53,147,0.7);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            font-size: 2rem;
+            font-weight: 800;
+            cursor: pointer;
+            z-index: 10;
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            box-shadow: 0 2px 8px #28359333;
+        }
+        .slider-btn:hover {
+            background: #ffb300;
+            color: #283593;
+            transform: scale(1.12);
+        }
+        .slider-btn-prev {
+            left: 18px;
+        }
+        .slider-btn-next {
+            right: 18px;
+        }
+        @media (max-width: 900px) {
+            .homepage-slider-section, .homepage-slider {
+                height: 180px;
+            }
+            .slider-slide img {
+                height: 180px;
+            }
+        }
+        @keyframes sliderFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .feature-image-section {
+            margin: 2.5rem 0 2.5rem 0;
+            display: flex;
+            justify-content: center;
+        }
+        .feature-image-bg {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 32px rgba(40,53,147,0.18);
+        }
+        .feature-img-main {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.85) contrast(1.08);
+            transition: filter 0.4s;
+        }
+        .feature-image-bg:hover .feature-img-main {
+            filter: brightness(1) contrast(1.13) saturate(1.1);
+        }
+        .feature-image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(40,53,147,0.72) 60%, rgba(255,179,0,0.38) 100%);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding: 2.2rem 2.5rem 2.2rem 2.5rem;
+            box-sizing: border-box;
+            pointer-events: none;
+        }
+        .feature-image-overlay h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 0 0.7rem 0;
+            color: #fff;
+            text-shadow: 0 2px 12px rgba(40,53,147,0.25);
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            color: #ffb300;
+            filter: drop-shadow(0 2px 8px #ffb30033);
+        }
+        .feature-image-overlay p {
+            font-size: 1.15rem;
+            margin: 0 0 1.2rem 0;
+            color: #fffde7;
+            text-shadow: 0 1px 8px rgba(40,53,147,0.18);
+        }
+        .feature-cta-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #ffb300 60%, #ff8c00 100%);
+            color: #fff;
+            padding: 0.9rem 2.2rem;
+            border-radius: 8px;
+            font-size: 1.13rem;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(255,179,0,0.18);
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+            pointer-events: auto;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .feature-cta-btn:hover {
+            background: linear-gradient(90deg, #283593 60%, #ffb300 100%);
+            transform: scale(1.07);
+        }
+        @media (max-width: 900px) {
+            .feature-img-main {
+                height: 180px;
+            }
+            .feature-image-overlay {
+                padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+            }
+            .feature-image-bg {
+                max-width: 100%;
+            }
+        }
+        </style>
+        <script>
+        // Homepage Slider Logic
+        let slideIndex = 0;
+        let sliderTimer = null;
+        const slides = document.getElementsByClassName('slider-slide');
+        function showSlide(n) {
+            if (!slides.length) return;
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            slideIndex = (n + slides.length) % slides.length;
+            slides[slideIndex].classList.add('active');
+        }
+        function plusSlides(n) {
+            showSlide(slideIndex + n);
+            resetSliderTimer();
+        }
+        function autoSlide() {
+            showSlide(slideIndex + 1);
+            sliderTimer = setTimeout(autoSlide, 5000);
+        }
+        function resetSliderTimer() {
+            if (sliderTimer) clearTimeout(sliderTimer);
+            sliderTimer = setTimeout(autoSlide, 5000);
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlide(0);
+            sliderTimer = setTimeout(autoSlide, 5000);
+        });
+        </script>
+            <div class="vision-section">
+                <div class="vision-section-bg" style="background: linear-gradient(rgba(40,53,147,0.60), rgba(40,53,147,0.30)), url('images 2/Rock1.jpeg') center/cover no-repeat; border-radius: 14px; box-shadow: 0 4px 24px rgba(40,53,147,0.13); padding: 2.5rem 1rem 2rem 1rem; margin-bottom: 2.5rem; color: #fff;">
+                    <div class="vision-icon" aria-hidden="true">&#128161;</div>
+                    <h3 style="color: #fff; text-shadow: 0 2px 12px rgba(40,53,147,0.25);">Our Vision</h3>
+                    <div class="vision-divider"></div>
+                    <p style="color: #f5f5f5; text-shadow: 0 1px 8px rgba(40,53,147,0.18);">To deliver expert advice, superior quality and access solutions that works and serves purpose in terms of building technology and management.</p>
+                </div>
+            </div>
+            <div class="counters">
+                <div class="counter-box">
+                    <span class="counter" data-target="150">0</span>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-target="15">0</span>
+                    <p>Years Experience</p>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-target="30">0</span>
+                    <p>Expert Engineers</p>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-target="100">0</span>
+                    <p>Satisfied Clients</p>
+                </div>
+            </div>
+
+<style>
+    .counters {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        margin: 2.5rem 0 2rem 0;
+    }
+    .counter-box {
+        background: linear-gradient(120deg, #e3eafc 70%, #fffde7 100%);
+        border-radius: 14px;
+        box-shadow: 0 4px 18px rgba(26,35,126,0.10);
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+        text-align: center;
+        min-width: 140px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 2px solid #e3eafc;
+        position: relative;
+        overflow: hidden;
+    }
+    .counter-box:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 10px 32px rgba(26,35,126,0.15);
+        border-color: #ffb300;
+    }
+    .counter {
+        display: block;
+        font-size: 2.7rem;
+        font-weight: 900;
+        color: #283593;
+        margin-bottom: 0.5rem;
+        transition: color 0.5s, text-shadow 0.5s;
+        text-shadow: 0 2px 12px #e3eafc;
+        letter-spacing: 1.5px;
+        animation: counterPop 1.2s;
+    }
+    .counter.animated {
+        color: #ffb300;
+        text-shadow: 0 2px 16px #ffb30088, 0 0 0 #e3eafc;
+        animation: counterBounce 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    @keyframes counterPop {
+        0% { transform: scale(0.7); opacity: 0.2; }
+        80% { transform: scale(1.15); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes counterBounce {
+        0% { transform: scale(1); }
+        30% { transform: scale(1.25); }
+        60% { transform: scale(0.95); }
+        100% { transform: scale(1); }
+    }
+    .counter-box p {
+        color: #1a237e;
+        font-weight: 700;
+        font-size: 1.08rem;
+        margin: 0;
+    }
+    @media (max-width: 900px) {
+        .counters {
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .counter-box {
+            min-width: 100px;
+            padding: 1.2rem 1rem 1rem 1rem;
+        }
+        .counter {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<script>
+// Animated Counters with color and bounce effect
+function animateCounters() {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        counter.classList.remove('animated');
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const duration = 1800;
+        const frameRate = 30;
+        const totalFrames = Math.round(duration / (1000 / frameRate));
+        let frame = 0;
+        function updateCounter() {
+            frame++;
+            const progress = frame / totalFrames;
+            const ease = progress < 0.5 ? 2 * progress * progress : -1 + (4 - 2 * progress) * progress;
+            count = Math.round(target * ease);
+            if (count > target) count = target;
+            counter.textContent = count;
+            if (frame < totalFrames) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.textContent = target;
+                counter.classList.add('animated');
+            }
+        }
+        updateCounter();
+    });
+}
+// Trigger counters when in viewport
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top < window.innerHeight - 80 &&
+        rect.bottom > 0
+    );
+}
+let countersAnimated = false;
+window.addEventListener('scroll', function() {
+    if (!countersAnimated) {
+        const countersSection = document.querySelector('.counters');
+        if (countersSection && isInViewport(countersSection)) {
+            animateCounters();
+            countersAnimated = true;
+        }
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(() => {
+        const countersSection = document.querySelector('.counters');
+        if (countersSection && isInViewport(countersSection)) {
+            animateCounters();
+            countersAnimated = true;
+        }
+    }, 600);
+});
+</script>
+            <div class="testimonials-section">
+                <h3>What Our Clients Say</h3>
+                <div class="testimonials-divider"></div>
+                <div class="testimonials-carousel">
+                    <div class="testimonial active">
+                        <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/men/12.jpg" alt="John D."></div>
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>“Professional, reliable, and delivered on time. Highly recommended!”</p>
+                        <span>- John D.</span>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Sarah K."></div>
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                        <p>“Excellent workmanship and great customer service.”</p>
+                        <span>- Sarah K.</span>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Ahmed M."></div>
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>“Our go-to company for all construction needs.”</p>
+                        <span>- Ahmed M.</span>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Linda O."></div>
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p>“They exceeded our expectations. The team was friendly and always available for questions.”</p>
+                        <span>- Linda O.</span>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button onclick="prevTestimonial()">&#10094;</button>
+                    <button onclick="nextTestimonial()">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="services-logo-wrap">
+                <div class="services-logo-decor">
+                    <span class="services-logo-bg"></span>
+                    <img src="images 2/istockphoto-1590248500-1024x1024.jpg" alt="Mom Construction Works and Engineering Logo" class="services-logo-img">
+                    <span class="services-logo-ring"></span>
+                </div>
+                <div class="services-logo-title">Mom Construction Works and Engineering</div>
+            </div>
+            <h2 style="text-align:center; color:#1a237e;">Our Services</h2>
+            <div class="services-list enhanced-services">
+                <div class="service-card">
+                    <span class="service-icon">🧹</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Pre & Post Construction Cleanings</a></h3>
+                    <p>Comprehensive cleaning services before and after construction to ensure a spotless site.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💰</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Cost Estimation</a></h3>
+                    <p>Accurate and transparent cost estimation for all project phases.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📋</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Site Inventory Analysis</a></h3>
+                    <p>Detailed analysis of site inventory to optimize project planning and execution.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🗂️</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Project Management</a></h3>
+                    <p>Professional management for seamless project delivery, from start to finish.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📑</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Project Contracts</a></h3>
+                    <p>Preparation and administration of all project-related contracts.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📏</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Quantity Surveying</a></h3>
+                    <p>Expert quantity surveying for precise material and cost control.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">⚠️</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Risk Analysis</a></h3>
+                    <p>Comprehensive risk assessment and mitigation strategies for your project.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">✅</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Quality Assurance & Safety</a></h3>
+                    <p>Strict quality assurance and safety protocols for every project.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏗️</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Site Development</a></h3>
+                    <p>End-to-end site development services for residential, commercial, and industrial projects.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🔍</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Feasibility Project Analysis</a></h3>
+                    <p>In-depth feasibility studies to ensure project viability and success.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💳</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Budget Control</a></h3>
+                    <p>Effective budget planning and control for cost-efficient project execution.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">👷‍♂️</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Construction Monitoring Services</a></h3>
+                    <p>Continuous monitoring to ensure quality, safety, and timely delivery.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🌱</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Lawn Solutions</a></h3>
+                    <p>Natural or artificial lawn installations, care, and maintenance for beautiful outdoor spaces.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏡</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Compound Decorations & Designs</a></h3>
+                    <p>Creative compound decoration and design services to enhance your property’s appeal.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💡</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">General Consultations</a></h3>
+                    <p>Expert advice and consultation on all construction activities and challenges.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🛒</span>
+                    <h3><a href="#gallery" class="service-link" onclick="showTab(event, 'gallery')">Purchasing & Hiring of Implements</a></h3>
+                    <p>Procurement and rental of construction implements and equipment.</p>
+                </div>
+            </div>
+            <style>
+                .services-logo-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 1.5rem;
+                }
+                .services-logo-decor {
+                    position: relative;
+                    display: inline-block;
+                    margin-bottom: 0.7rem;
+                }
+                .services-logo-img {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 4px solid #ffb300;
+                    box-shadow: 0 4px 24px #28359333, 0 0 0 8px #fffde7;
+                    background: #fff;
+                    z-index: 2;
+                    position: relative;
+                    transition: transform 0.3s;
+                }
+                .services-logo-decor:hover .services-logo-img {
+                    transform: scale(1.07) rotate(-2deg);
+                }
+                .services-logo-bg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 120px;
+                    height: 120px;
+                    background: linear-gradient(135deg, #e3eafc 60%, #ffb300 100%);
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                    filter: blur(8px) opacity(0.5);
+                }
+                .services-logo-ring {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 110px;
+                    height: 110px;
+                    border: 3px dashed #ffb300;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 3;
+                    pointer-events: none;
+                    animation: logoRingSpin 6s linear infinite;
+                }
+                @keyframes logoRingSpin {
+                    0% { transform: translate(-50%, -50%) rotate(0deg); }
+                    100% { transform: translate(-50%, -50%) rotate(360deg); }
+                }
+                .services-logo-title {
+                    font-family: 'Montserrat', Arial, sans-serif;
+                    font-size: 1.25rem;
+                    font-weight: 800;
+                    color: #1a237e;
+                    letter-spacing: 1.2px;
+                    text-shadow: 0 2px 8px #e3eafc;
+                    margin-bottom: 0.2rem;
+                }
+                .enhanced-services {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    justify-content: center;
+                }
+                .enhanced-services .service-card {
+                    flex: 1 1 260px;
+                    max-width: 320px;
+                    background: linear-gradient(135deg, #e3eafc 70%, #fffde7 100%);
+                    border-radius: 14px;
+                    padding: 2rem 1.2rem 1.5rem 1.2rem;
+                    box-shadow: 0 4px 18px rgba(26,35,126,0.10);
+                    text-align: center;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    margin-bottom: 1.5rem;
+                    border: 2px solid #e3eafc;
+                }
+                .enhanced-services .service-card:hover {
+                    transform: translateY(-10px) scale(1.04);
+                    box-shadow: 0 10px 32px rgba(26,35,126,0.15);
+                    border-color: #ffb300;
+                }
+                .service-icon {
+                    font-size: 2.2rem;
+                    display: block;
+                    margin-bottom: 1rem;
+                    color: #ffb300;
+                    text-shadow: 0 2px 8px rgba(255,179,0,0.10);
+                }
+                @media (max-width: 900px) {
+                    .enhanced-services {
+                        flex-direction: column;
+                        gap: 1.2rem;
+                    }
+                    .enhanced-services .service-card {
+                        max-width: 100%;
+                    }
+                }
+            .service-link {
+                color: #1a237e;
+                text-decoration: underline dotted;
+                font-weight: 800;
+                transition: color 0.2s;
+            }
+            .service-link:hover {
+                color: #ffb300;
+                text-decoration: underline solid;
+            }
+            </style>
+        </section>
+        <section id="about">
+        <div class="about-section-pro">
+            <h2 class="about-title"><span class="about-main-icon">&#128736;</span> About Us</h2>
+            <div class="about-intro">
+                <p>Mom Construction Works and Engineering is a <span class="about-highlight">leading construction and engineering company</span> with a reputation for excellence. Our experienced team is committed to delivering <span class="about-highlight">high-quality projects</span>, <span class="about-highlight">innovative solutions</span>, and <span class="about-highlight">outstanding customer service</span>. We believe in building lasting relationships with our clients through <span class="about-highlight">trust</span>, <span class="about-highlight">transparency</span>, and <span class="about-highlight">superior results</span>.</p>
+            </div>
+            <div class="about-cards-grid">
+                <div class="about-card vision-card">
+                    <div class="about-card-icon-bg"><span class="about-icon">&#128161;</span></div>
+                    <h3>Vision</h3>
+                    <div class="about-divider"></div>
+                    <p>To deliver expert advice, superior quality and access solutions that works and serves purpose in terms of building technology and management.</p>
+                </div>
+                <div class="about-card mission-card">
+                    <div class="about-card-icon-bg"><span class="about-icon">&#127919;</span></div>
+                    <h3>Mission</h3>
+                    <div class="about-divider"></div>
+                    <p>To provide outstanding home improvement and remodeling value, attaining excellence in quality with timely completion and on budget.</p>
+                </div>
+                <div class="about-card ethos-card">
+                    <div class="about-card-icon-bg"><span class="about-icon">&#128188;</span></div>
+                    <h3>Our Ethos</h3>
+                    <div class="about-divider"></div>
+                    <ul class="ethos-list">
+                        <li>Understanding and Hard work</li>
+                        <li>Loyalty and Integrity</li>
+                        <li>Transparency and Fairness</li>
+                        <li>Good name not Riches</li>
+                        <li>Forward ever, backward never.</li>
+                    </ul>
+                </div>
+                <div class="about-card why-card">
+                    <div class="about-card-icon-bg"><span class="about-icon">&#10067;</span></div>
+                    <h3>Why Consulting Us</h3>
+                    <div class="about-divider"></div>
+                    <ul class="why-list">
+                        <li>We deliver expert advice on project management</li>
+                        <li>We provide superior quality and access solutions that works</li>
+                        <li>We plan, design, evaluate, develop and implement with latest technology in building</li>
+                        <li>We provide best value for money</li>
+                        <li>Our works embrace time and on budget</li>
+                        <li>We tailor our designs to meet events of purpose</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-section-divider"></div>
+            <div class="about-extra-elements">
+                <div class="about-timeline">
+                    <h3 class="about-extra-title"><span class="about-extra-icon">&#128197;</span> Our Journey</h3>
+                    <ul class="timeline-list">
+                        <li><span class="timeline-year">2010</span> - Company founded with a vision for quality and innovation.</li>
+                        <li><span class="timeline-year">2013</span> - Completed our first major commercial project.</li>
+                        <li><span class="timeline-year">2017</span> - Expanded services to include advanced engineering solutions.</li>
+                        <li><span class="timeline-year">2021</span> - Reached 200+ completed projects and 100+ satisfied clients.</li>
+                        <li><span class="timeline-year">2025</span> - Recognized as a leader in construction and engineering excellence.</li>
+                    </ul>
+                </div>
+                <div class="about-team">
+                    <h3 class="about-extra-title"><span class="about-extra-icon">&#128101;</span> Meet Our Team</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <img src="D:\Mom Conatruction Works and Engineering\website\images 2\Rock 5(1).jpeg" alt="Team Member" class="team-photo">
+                            <div class="team-info">
+                                <span class="team-name">Engr. Neindow Taalab</span>
+                                <span class="team-role">Lead Engineer</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="images 2/Rocky.jpeg" alt="Team Member" class="team-photo">
+                            <div class="team-info">
+                                <span class="team-name">Eng. O.P Rocky</span>
+                                <span class="team-role">Project Manager</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team Member" class="team-photo">
+                            <div class="team-info">
+                                <span class="team-name">Ahmed Musa</span>
+                                <span class="team-role">Site Supervisor</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Benedicta Owusu Nuamah" class="team-photo">
+                            <div class="team-info">
+                                <span class="team-name">Benedicta Owusu Nuamah</span>
+                                <span class="team-role">Consultant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cta-partner">
+                    <h3 class="about-extra-title"><span class="about-extra-icon">&#129309;</span> Partner With Us</h3>
+                    <p class="about-cta-text">Ready to build something great together? <a href="#contact" class="about-cta-link" onclick="showTab(event, 'contact')">Contact us</a> to discuss your next project or partnership opportunity.</p>
+                </div>
+            </div>
+        </div>
+        <section id="faq">
+            <div class="faq-section">
+                <h2 style="text-align:center; color:#1a237e;">Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">What services do you offer?</button>
+                    <div class="faq-answer">We offer building construction, renovation, engineering solutions, and project management.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How can I request a quote?</button>
+                    <div class="faq-answer">Click the 'Get a Free Quote' button or contact us via the form on the Contact tab.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you handle commercial projects?</button>
+                    <div class="faq-answer">Yes, we handle residential, commercial, and industrial projects of all sizes.</div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <style>
+            .about-extra-elements {
+                margin-top: 2.5rem;
+            }
+            .about-timeline {
+                background: rgba(255,255,255,0.92);
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(40,53,147,0.07);
+                padding: 2rem 1.2rem 1.5rem 1.2rem;
+                margin-bottom: 2.2rem;
+            }
+            .about-extra-title {
+                color: #1a237e;
+                font-size: 1.18rem;
+                font-weight: 800;
+                margin-bottom: 1.1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .about-extra-icon {
+                font-size: 1.5rem;
+                color: #ffb300;
+            }
+            .timeline-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: #444;
+                font-size: 1.08rem;
+            }
+            .timeline-list li {
+                margin-bottom: 0.7rem;
+                position: relative;
+                padding-left: 2.2rem;
+            }
+            .timeline-year {
+                font-weight: 700;
+                color: #ffb300;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .about-team {
+                background: rgba(255,255,255,0.92);
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(40,53,147,0.07);
+                padding: 2rem 1.2rem 1.5rem 1.2rem;
+                margin-bottom: 2.2rem;
+            }
+            .team-grid {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .team-member {
+                background: #fffde7;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px #ffb30022;
+                padding: 1.2rem 1rem 1rem 1rem;
+                text-align: center;
+                max-width: 180px;
+                flex: 1 1 140px;
+                margin-bottom: 1.2rem;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            .team-member:hover {
+                transform: translateY(-6px) scale(1.04);
+                box-shadow: 0 8px 24px #ffb30033;
+            }
+            .team-photo {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 0.7rem;
+                border: 3px solid #e3eafc;
+            }
+            .team-info {
+                display: flex;
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+            .team-name {
+                font-weight: 700;
+                color: #1a237e;
+            }
+            .team-role {
+                color: #444;
+                font-size: 0.98rem;
+            }
+            .about-cta-partner {
+                background: linear-gradient(90deg, #fffde7 60%, #e3eafc 100%);
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(40,53,147,0.07);
+                padding: 2rem 1.2rem 1.5rem 1.2rem;
+                text-align: center;
+            }
+            .about-cta-text {
+                font-size: 1.13rem;
+                color: #1a237e;
+                font-weight: 600;
+            }
+            .about-cta-link {
+                color: #fff;
+                background: #ffb300;
+                padding: 0.4em 1.2em;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: 700;
+                margin-left: 0.5em;
+                transition: background 0.3s, color 0.3s;
+            }
+            .about-cta-link:hover {
+                background: #283593;
+                color: #fffde7;
+            }
+            @media (max-width: 900px) {
+                .team-grid {
+                    flex-direction: column;
+                    gap: 1.2rem;
+                }
+            }
+            .about-section-pro {
+                background: linear-gradient(rgba(40,53,147,0.70), rgba(255,179,0,0.45)), url('images 2/istockphoto-170961882-1024x1024.jpg') center/cover no-repeat;
+                border-radius: 18px;
+                box-shadow: 0 4px 24px rgba(40,53,147,0.10);
+                padding: 2.7rem 2rem 2.2rem 2rem;
+                margin-bottom: 2.5rem;
+                position: relative;
+            }
+            .about-title {
+                margin-bottom: 2.2rem;
+                text-align: center;
+                font-size: 2.2rem;
+                font-weight: 800;
+                color: #1a237e;
+                letter-spacing: 1.5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.7rem;
+            }
+            .about-main-icon {
+                font-size: 2.3rem;
+                color: #ffb300;
+                filter: drop-shadow(0 2px 8px #ffb30033);
+            }
+            .about-intro {
+                text-align: center;
+                margin-bottom: 2.2rem;
+                color: #444;
+                font-size: 1.15rem;
+                line-height: 1.8;
+            }
+            .about-highlight {
+                background: linear-gradient(90deg, #ffb300 60%, #fffde7 100%);
+                color: #1a237e;
+                padding: 0.1em 0.4em;
+                border-radius: 6px;
+                font-weight: 700;
+                box-shadow: 0 2px 8px #ffb30022;
+            }
+            .about-cards-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2.2rem;
+                justify-content: center;
+            }
+            .about-card {
+                background: #fff;
+                border-radius: 16px;
+                box-shadow: 0 2px 16px rgba(40,53,147,0.10);
+                padding: 2.2rem 1.3rem 1.7rem 1.3rem;
+                max-width: 340px;
+                min-width: 260px;
+                flex: 1 1 260px;
+                text-align: left;
+                margin-bottom: 1.5rem;
+                border: 2.5px solid #e3eafc;
+                transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+                position: relative;
+                overflow: hidden;
+            }
+            .about-card:hover {
+                transform: translateY(-10px) scale(1.04);
+                box-shadow: 0 10px 32px rgba(26,35,126,0.15);
+                border-color: #ffb300;
+                background: linear-gradient(120deg, #fffde7 80%, #e3eafc 100%);
+            }
+            .about-card h3 {
+                color: #1a237e;
+                font-size: 1.22rem;
+                margin-bottom: 0.7rem;
+                font-weight: 800;
+                text-align: left;
+                letter-spacing: 1px;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .about-card-icon-bg {
+                background: linear-gradient(120deg, #ffb300 60%, #fffde7 100%);
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 0.7rem;
+                box-shadow: 0 2px 8px #ffb30033;
+            }
+            .about-icon {
+                font-size: 1.7rem;
+                color: #fff;
+                filter: drop-shadow(0 2px 8px #ffb30033);
+            }
+            .about-divider {
+                width: 40px;
+                height: 4px;
+                background: linear-gradient(90deg, #ffb300 60%, #e3eafc 100%);
+                border-radius: 2px;
+                margin: 0.7rem 0 1.1rem 0;
+            }
+            .ethos-list, .why-list {
+                padding-left: 1.2rem;
+                margin: 0;
+                color: #444;
+                font-size: 1.08rem;
+            }
+            .ethos-list li, .why-list li {
+                margin-bottom: 0.5rem;
+                list-style: disc inside;
+            }
+            .about-section-divider {
+                width: 100%;
+                height: 6px;
+                background: linear-gradient(90deg, #e3eafc 60%, #ffb300 100%);
+                border-radius: 3px;
+                margin: 2.5rem 0 0 0;
+            }
+            @media (max-width: 900px) {
+                .about-cards-grid {
+                    flex-direction: column;
+                    gap: 1.2rem;
+                }
+                .about-card {
+                    max-width: 100%;
+                }
+                .about-title {
+                    font-size: 1.5rem;
+                }
+            }
+        </style>
+        <section id="gallery">
+            <h2 style="text-align:center; color:#1a237e;">Gallery</h2>
+            <div class="gallery-nav">
+                <button class="gallery-tab active" onclick="filterGallery('all', this)">All</button>
+                <button class="gallery-tab" onclick="filterGallery('cleaning', this)">Pre & Post Construction Cleanings</button>
+                <button class="gallery-tab" onclick="filterGallery('project', this)">Projects</button>
+                <button class="gallery-tab" onclick="filterGallery('design', this)">Decor & Design</button>
+            </div>
+            <div class="gallery-grid">
+                <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" class="gallery-item cleaning" target="_blank" title="Pre Construction Cleaning">
+                    <img src="D:\Mom Conatruction Works and Engineering\website\images 2\istockphoto-1590248500-1024x1024.jpg" alt="Pre Construction Cleaning">
+                    <span class="gallery-caption">Pre Construction Cleaning</span>
+                </a>
+                <a href="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" class="gallery-item cleaning" target="_blank" title="Post Construction Cleaning">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80" alt="Post Construction Cleaning">
+                    <span class="gallery-caption">Post Construction Cleaning</span>
+                </a>
+                <a href="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80" class="gallery-item project" target="_blank" title="Residential Project">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Residential Project">
+                    <span class="gallery-caption">Residential Project</span>
+                </a>
+                <a href="https://images.unsplash.com/photo-1523413363574-c30aa1c2a516?auto=format&fit=crop&w=1200&q=80" class="gallery-item project" target="_blank" title="Commercial Project">
+                    <img src="https://images.unsplash.com/photo-1523413363574-c30aa1c2a516?auto=format&fit=crop&w=400&q=80" alt="Commercial Project">
+                    <span class="gallery-caption">Commercial Project</span>
+                </a>
+                <a href="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80" class="gallery-item design" target="_blank" title="Compound Decoration">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Compound Decoration">
+                    <span class="gallery-caption">Compound Decoration</span>
+                </a>
+                <a href="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" class="gallery-item design" target="_blank" title="Interior Design">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Interior Design">
+                    <span class="gallery-caption">Interior Design</span>
+                
+                </a>
+                <a href="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=1200&q=80" class="gallery-item design" target="_blank" title="Landscape Design">
+                    <img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=400&q=80" alt="Landscape Design">
+                    <span class="gallery-caption">Landscape Design</span>
+                </a>
+                <a href="images 2/lawn 1.jpg" class="gallery-item lawns" target="_blank" title="Lawn Installation">
+                    <img src="images 2/lawn 1.jpg" alt="Lawn Installation">
+                    <span class="gallery-caption"><a href="images 2/lawn 1.jpg" target="_blank" style="color:#1a237e;text-decoration:underline;font-weight:700;">Lawn Installation</a></span>
+                </a>
+                <a href="images 2/lawn 2.jpg" class="gallery-item lawns" target="_blank" title="Lawn Design">
+                    <img src="images 2/lawn 2.jpg" alt="Lawn Design">
+                    <span class="gallery-caption">Lawn Design</span>
+                </a>
+                <a href="images 2/lawns design.jpg" class="gallery-item lawns" target="_blank" title="Lawns Design">
+                    <img src="images 2/lawns design.jpg" alt="Lawns Design">
+                    <span class="gallery-caption">Lawns Design</span>
+                </a>
+                <a href="images 2/maxresdefault.jpg" class="gallery-item lawns" target="_blank" title="Artificial Lawn Project">
+                    <img src="images 2/maxresdefault.jpg" alt="Artificial Lawn Project">
+                    <span class="gallery-caption">Pre Construction</span>
+                </a>
+                <a href="D:\Mom Conatruction Works and Engineering\website\images 2\istockphoto-1212517234-1024x1024.jpg" class="gallery-item project" target="_blank" title="Industrial Project">
+                    <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=400&q=80" alt="Industrial Project">
+                    <span class="gallery-caption">Industrial Project</span>
+                </a>
+            </div>
+            <style>
+                .gallery-nav {
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                }
+                .gallery-tab {
+                    background: #e3eafc;
+                    color: #1a237e;
+                    border: none;
+                    border-radius: 6px 6px 0 0;
+                    padding: 0.7rem 1.5rem;
+                    font-size: 1.08rem;
+                    font-weight: 700;
+                    margin: 0 0.2rem;
+                    cursor: pointer;
+                    transition: background 0.3s, color 0.3s;
+                }
+                .gallery-tab.active, .gallery-tab:hover {
+                    background: #ffb300;
+                    color: #fff;
+                }
+                .gallery-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                    gap: 1.5rem;
+                    margin: 0 auto 2rem auto;
+                    max-width: 900px;
+                }
+                .gallery-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background: #fff;
+                    border-radius: 12px;
+                    box-shadow: 0 2px 12px #28359318;
+                    overflow: hidden;
+                    text-decoration: none;
+                    transition: box-shadow 0.3s, transform 0.3s;
+                    position: relative;
+                }
+                .gallery-item:hover {
+                    box-shadow: 0 8px 32px #ffb30033;
+                    transform: translateY(-8px) scale(1.04);
+                }
+                .gallery-item img {
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+                    border-bottom: 2px solid #e3eafc;
+                }
+                .gallery-caption {
+                    padding: 0.8rem 1rem 0.8rem 1rem;
+                    color: #1a237e;
+                    font-weight: 700;
+                    font-size: 1.08rem;
+                    text-align: center;
+                    background: #fffde7;
+                    width: 100%;
+                    border-radius: 0 0 12px 12px;
+                }
+                @media (max-width: 700px) {
+                    .gallery-grid {
+                        grid-template-columns: 1fr;
+                        gap: 1rem;
+                    }
+                    .gallery-item img {
+                        height: 120px;
+                    }
+                }
+            </style>
+            <script>
+                function filterGallery(category, btn) {
+                    var items = document.querySelectorAll('.gallery-item');
+                    var tabs = document.querySelectorAll('.gallery-tab');
+                    tabs.forEach(t => t.classList.remove('active'));
+                    btn.classList.add('active');
+                    items.forEach(function(item) {
+                        if (category === 'all' || item.classList.contains(category)) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                }
+            </script>
+        </section>
+        <section id="recruitment">
+            <div class="recruitment-section-pro">
+                <h2 class="recruitment-title"><span class="recruitment-main-icon">&#128188;</span> Recruitment</h2>
+                <div class="recruitment-content-flex">
+                    <div class="recruitment-form-pro-wrap">
+                        <form class="recruitment-form-pro" enctype="multipart/form-data" onsubmit="event.preventDefault(); alert('Thank you for your application! We will contact you if shortlisted.'); this.reset();">
+                            <h3 class="recruitment-form-section-title">Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" id="fullname" name="fullname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">Position Applying For</label>
+                                    <select id="role" name="role" required>
+                                        <option value="">Select...</option>
+                                        <option value="skilled">Skilled Worker</option>
+                                        <option value="unskilled">Unskilled Worker</option>
+                                        <option value="intern">Internship</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h3 class="recruitment-form-section-title">Education & Experience</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="education">Highest Education</label>
+                                    <input type="text" id="education" name="education" placeholder="e.g. BSc Civil Engineering" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="experience">Years of Experience</label>
+                                    <input type="number" id="experience" name="experience" min="0" max="50" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="skills">Key Skills</label>
+                                    <input type="text" id="skills" name="skills" placeholder="e.g. Masonry, Carpentry, Plumbing" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="certifications">Certifications (if any)</label>
+                                    <input type="text" id="certifications" name="certifications" placeholder="e.g. OSHA, NVTI">
+                                </div>
+                            </div>
+                            <h3 class="recruitment-form-section-title">References & Documents</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="reference">Reference Name</label>
+                                    <input type="text" id="reference" name="reference" placeholder="e.g. Previous Employer" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="reference-contact">Reference Contact</label>
+                                    <input type="text" id="reference-contact" name="reference-contact" placeholder="Phone or Email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cv">Upload CV/Resume</label>
+                                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="photo">Upload Passport Photo</label>
+                                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                                </div>
+                            </div>
+                            <h3 class="recruitment-form-section-title">About You</h3>
+                            <label for="message">Tell us about yourself</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <button type="submit" class="recruitment-submit-btn-pro">Submit Application</button>
+                        </form>
+                    </div>
+                    <aside class="recruitment-sidebar">
+                        <div class="recruitment-sidebar-card">
+                            <h4>Why Join Us?</h4>
+                            <ul>
+                                <li>Work with a leading construction & engineering team</li>
+                                <li>Opportunities for growth and training</li>
+                                <li>Inclusive and supportive work environment</li>
+                                <li>Competitive compensation</li>
+                            </ul>
+                        </div>
+                        <div class="recruitment-sidebar-card">
+                            <h4>Application Tips</h4>
+                            <ul>
+                                <li>Fill all required fields accurately</li>
+                                <li>Upload clear and updated documents</li>
+                                <li>Highlight relevant skills and experience</li>
+                                <li>Provide valid references</li>
+                            </ul>
+                        </div>
+                        <div class="recruitment-sidebar-card">
+                            <h4>Our Values</h4>
+                            <ul>
+                                <li>Integrity & Hard Work</li>
+                                <li>Teamwork & Respect</li>
+                                <li>Quality & Safety</li>
+                                <li>Continuous Improvement</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <style>
+                .recruitment-section-pro {
+                    background: linear-gradient(120deg, #e3eafc 70%, #fffde7 100%);
+                    border-radius: 18px;
+                    box-shadow: 0 4px 24px rgba(40,53,147,0.10);
+                    padding: 2.7rem 2rem 2.2rem 2rem;
+                    margin-bottom: 2.5rem;
+                    position: relative;
+                }
+                .recruitment-title {
+                    margin-bottom: 2.2rem;
+                    text-align: center;
+                    font-size: 2.2rem;
+                    font-weight: 800;
+                    color: #1a237e;
+                    letter-spacing: 1.5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.7rem;
+                }
+                .recruitment-main-icon {
+                    font-size: 2.3rem;
+                    color: #ffb300;
+                    filter: drop-shadow(0 2px 8px #ffb30033);
+                }
+                .recruitment-content-flex {
+                    display: flex;
+                    gap: 2.5rem;
+                    flex-wrap: wrap;
+                }
+                .recruitment-form-pro-wrap {
+                    flex: 2 1 420px;
+                    min-width: 320px;
+                }
+                .recruitment-form-pro {
+                    background: #fff;
+                    border-radius: 16px;
+                    box-shadow: 0 2px 16px rgba(40,53,147,0.10);
+                    padding: 2.2rem 1.3rem 1.7rem 1.3rem;
+                    border: 2.5px solid #e3eafc;
+                }
+                .recruitment-form-section-title {
+                    color: #1a237e;
+                    font-size: 1.18rem;
+                    font-weight: 800;
+                    margin-bottom: 1.1rem;
+                    margin-top: 1.7rem;
+                }
+                .recruitment-form-section-title:first-child {
+                    margin-top: 0;
+                }
+                .form-row {
+                    display: flex;
+                    gap: 1.2rem;
+                    margin-bottom: 1.1rem;
+                    flex-wrap: wrap;
+                }
+                .form-group {
+                    flex: 1 1 180px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .recruitment-form-pro label {
+                    font-weight: 700;
+                    color: #283593;
+                    margin-bottom: 0.3rem;
+                }
+                .recruitment-form-pro input,
+                .recruitment-form-pro select,
+                .recruitment-form-pro textarea {
+                    padding: 0.7em 1em;
+                    border-radius: 7px;
+                    border: 1.5px solid #e3eafc;
+                    margin-bottom: 0.7rem;
+                    font-size: 1.05rem;
+                    background: #f7faff;
+                    transition: border 0.2s;
+                }
+                .recruitment-form-pro input:focus,
+                .recruitment-form-pro select:focus,
+                .recruitment-form-pro textarea:focus {
+                    border: 1.5px solid #ffb300;
+                    outline: none;
+                }
+                .recruitment-submit-btn-pro {
+                    background: linear-gradient(90deg, #ffb300 60%, #ff8c00 100%);
+                    color: #fff;
+                    padding: 1rem 2.2rem;
+                    border-radius: 8px;
+                    font-size: 1.13rem;
+                    font-weight: 800;
+                    text-decoration: none;
+                    box-shadow: 0 4px 16px rgba(255,179,0,0.13);
+                    letter-spacing: 1px;
+                    border: none;
+                    margin-top: 1.2rem;
+                    transition: background 0.3s, transform 0.2s;
+                    cursor: pointer;
+                }
+                .recruitment-submit-btn-pro:hover {
+                    background: linear-gradient(90deg, #283593 60%, #ffb300 100%);
+                    transform: scale(1.07);
+                }
+                .recruitment-sidebar {
+                    flex: 1 1 260px;
+                    min-width: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+                .recruitment-sidebar-card {
+                    background: #fffde7;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 8px #ffb30022;
+                    padding: 1.2rem 1rem 1rem 1rem;
+                    margin-bottom: 0.7rem;
+                }
+                .recruitment-sidebar-card h4 {
+                    color: #1a237e;
+                    font-size: 1.08rem;
+                    font-weight: 800;
+                    margin-bottom: 0.7rem;
+                }
+                .recruitment-sidebar-card ul {
+                    padding-left: 1.2rem;
+                    margin: 0;
+                    color: #444;
+                    font-size: 1.02rem;
+                }
+                .recruitment-sidebar-card li {
+                    margin-bottom: 0.4rem;
+                    list-style: disc inside;
+                }
+                @media (max-width: 900px) {
+                    .recruitment-content-flex {
+                        flex-direction: column;
+                        gap: 1.2rem;
+                    }
+                    .recruitment-sidebar {
+                        flex-direction: row;
+                        gap: 1.2rem;
+                    }
+                }
+            </style>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact-pro-animated">
+                <div class="contact-header-pro">
+                    <h2 class="contact-title-pro"><span class="contact-main-icon">&#9993;</span> Contact Us</h2>
+                    <p class="contact-lead-pro">We'd love to hear from you! Reach out for a quote, partnership, or any inquiry.</p>
+                </div>
+                <div class="contact-content-flex">
+                    <div class="contact-info-cards">
+                        <div class="contact-info-card animated-card" style="--delay:0.1s">
+                            <span class="contact-info-icon">&#128222;</span>
+                            <div class="contact-info-label">Phone</div>
+                            <a href="tel:+233554218809" class="contact-info-link">+233 55 421 8809</a>
+                        </div>
+                        <div class="contact-info-card animated-card" style="--delay:0.2s">
+                            <span class="contact-info-icon">&#9993;</span>
+                            <div class="contact-info-label">Email</div>
+                            <a href="mailto:momconstructonworks@gmail.com" class="contact-info-link">momconstructonworks@gmail.com</a>
+                        </div>
+                        <div class="contact-info-card animated-card" style="--delay:0.3s">
+                            <span class="contact-info-icon">&#127968;</span>
+                            <div class="contact-info-label">Location</div>
+                            <span class="contact-info-link">Kumasi, Ghana</span>
+                        </div>
+                        <div class="contact-info-card animated-card" style="--delay:0.4s">
+                            <span class="contact-info-icon">&#128241;</span>
+                            <div class="contact-info-label">WhatsApp</div>
+                            <a href="https://wa.me/233554218809" class="contact-info-link" target="_blank">Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="contact-form-map-wrap">
+                        <form class="contact-form-pro-modern" onsubmit="event.preventDefault(); animateContactSuccess(); this.reset();">
+                            <div class="form-floating-row">
+                                <div class="form-floating-group">
+                                    <input type="text" name="name" id="contactName" required>
+                                    <label for="contactName">Your Name</label>
+                                </div>
+                                <div class="form-floating-group">
+                                    <input type="email" name="email" id="contactEmail" required>
+                                    <label for="contactEmail">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="form-floating-group">
+                                <textarea name="message" id="contactMessage" rows="4" required></textarea>
+                                <label for="contactMessage">Your Message</label>
+                            </div>
+                            <button type="submit" class="contact-submit-btn-pro"><span class="send-icon">&#10148;</span> Send Message</button>
+                            <div id="contactSuccessMsg" class="contact-success-msg">Thank you for contacting us! We will get back to you soon.</div>
+                        </form>
+                        <div class="contact-map animated-card" style="--delay:0.5s">
+                            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.205,5.560,0.205,5.660&amp;layer=mapnik" style="border:0; width:100%; height:180px; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Accra, Ghana Map"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .contact-pro-animated {
+                    background: linear-gradient(120deg, #e3eafc 70%, #fffde7 100%);
+                    border-radius: 18px;
+                    box-shadow: 0 4px 24px rgba(40,53,147,0.10);
+                    padding: 2.7rem 2rem 2.2rem 2rem;
+                    margin-bottom: 2.5rem;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .contact-header-pro {
+                    text-align: center;
+                    margin-bottom: 2.2rem;
+                }
+                .contact-title-pro {
+                    font-size: 2.2rem;
+                    font-weight: 800;
+                    color: #1a237e;
+                    letter-spacing: 1.5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.7rem;
+                }
+                .contact-main-icon {
+                    font-size: 2.3rem;
+                    color: #ffb300;
+                    filter: drop-shadow(0 2px 8px #ffb30033);
+                }
+                .contact-lead-pro {
+                    color: #444;
+                    font-size: 1.13rem;
+                    margin-top: 0.7rem;
+                }
+                .contact-content-flex {
+                    display: flex;
+                    gap: 2.5rem;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                }
+                .contact-info-cards {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.3rem;
+                    min-width: 220px;
+                    flex: 1 1 220px;
+                }
+                .contact-info-card {
+                    background: #fff;
+                    border-radius: 14px;
+                    box-shadow: 0 2px 12px #28359318;
+                    padding: 1.2rem 1.1rem 1rem 1.1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.3rem;
+                    opacity: 0;
+                    transform: translateY(30px) scale(0.98);
+                    animation: contactCardFadeIn 0.7s cubic-bezier(.4,0,.2,1) forwards;
+                    animation-delay: var(--delay, 0s);
+                }
+                @keyframes contactCardFadeIn {
+                    from { opacity: 0; transform: translateY(30px) scale(0.98); }
+                    to { opacity: 1; transform: translateY(0) scale(1); }
+                }
+                .contact-info-icon {
+                    font-size: 1.7rem;
+                    color: #ffb300;
+                    margin-bottom: 0.2rem;
+                }
+                .contact-info-label {
+                    font-weight: 700;
+                    color: #1a237e;
+                    font-size: 1.08rem;
+                }
+                .contact-info-link {
+                    color: #283593;
+                    font-size: 1.05rem;
+                    text-decoration: underline dotted;
+                    font-weight: 700;
+                    transition: color 0.2s;
+                }
+                .contact-info-link:hover {
+                    color: #ffb300;
+                    text-decoration: underline solid;
+                }
+                .contact-form-map-wrap {
+                    flex: 2 1 420px;
+                    min-width: 320px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+                .contact-form-pro-modern {
+                    background: #fff;
+                    border-radius: 16px;
+                    box-shadow: 0 2px 16px rgba(40,53,147,0.10);
+                    padding: 2.2rem 1.3rem 1.7rem 1.3rem;
+                    border: 2.5px solid #e3eafc;
+                    margin-bottom: 0.7rem;
+                    position: relative;
+                }
+                .form-floating-row {
+                    display: flex;
+                    gap: 1.2rem;
+                    margin-bottom: 1.1rem;
+                    flex-wrap: wrap;
+                }
+                .form-floating-group {
+                    flex: 1 1 180px;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    margin-bottom: 1.1rem;
+                }
+                .form-floating-group input,
+                .form-floating-group textarea {
+                    padding: 1.1em 1em 0.7em 1em;
+                    border-radius: 7px;
+                    border: 1.5px solid #e3eafc;
+                    font-size: 1.05rem;
+                    background: #f7faff;
+                    transition: border 0.2s;
+                    outline: none;
+                }
+                .form-floating-group input:focus,
+                .form-floating-group textarea:focus {
+                    border: 1.5px solid #ffb300;
+                }
+                .form-floating-group label {
+                    position: absolute;
+                    left: 1em;
+                    top: 1.1em;
+                    color: #888;
+                    font-size: 1.05rem;
+                    background: transparent;
+                    pointer-events: none;
+                    transition: 0.2s;
+                    padding: 0 0.2em;
+                }
+                .form-floating-group input:focus + label,
+                .form-floating-group input:not(:placeholder-shown):not([value=""]) + label,
+                .form-floating-group textarea:focus + label,
+                .form-floating-group textarea:not(:placeholder-shown):not([value=""]) + label {
+                    top: -0.7em;
+                    left: 0.8em;
+                    font-size: 0.92rem;
+                    color: #ffb300;
+                    background: #fff;
+                    padding: 0 0.4em;
+                    border-radius: 4px;
+                }
+                .contact-submit-btn-pro {
+                    background: linear-gradient(90deg, #ffb300 60%, #ff8c00 100%);
+                    color: #fff;
+                    padding: 1rem 2.2rem;
+                    border-radius: 8px;
+                    font-size: 1.13rem;
+                    font-weight: 800;
+                    text-decoration: none;
+                    box-shadow: 0 4px 16px rgba(255,179,0,0.13);
+                    letter-spacing: 1px;
+                    border: none;
+                    margin-top: 1.2rem;
+                    transition: background 0.3s, transform 0.2s;
+                    cursor: pointer;
+                }
+                .contact-submit-btn-pro:hover {
+                    background: linear-gradient(90deg, #283593 60%, #ffb300 100%);
+                    transform: scale(1.07);
+                }
+                .contact-success-msg {
+                    display: none;
+                    color: #fff;
+                    background: #43a047;
+                    border-radius: 8px;
+                    padding: 0.8em 1.2em;
+                    font-weight: 700;
+                    margin-top: 1.2em;
+                    text-align: center;
+                    font-size: 1.08rem;
+                    animation: contactSuccessFadeIn 0.7s cubic-bezier(.4,0,.2,1);
+                }
+                @keyframes contactSuccessFadeIn {
+                    from { opacity: 0; transform: translateY(20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                .contact-map {
+                    margin-top: 1.2rem;
+                    opacity: 0;
+                    transform: translateY(30px) scale(0.98);
+                    animation: contactCardFadeIn 0.7s cubic-bezier(.4,0,.2,1) forwards;
+                    animation-delay: var(--delay, 0s);
+                }
+                @media (max-width: 900px) {
+                    .contact-content-flex {
+                        flex-direction: column;
+                        gap: 1.2rem;
+                    }
+                    .contact-info-cards {
+                        flex-direction: row;
+                        gap: 1.2rem;
+                    }
+                }
+            </style>
+  
+        
+        </section>
+    </div>
+    <footer>
+    <button id="backToTop" title="Back to top">&#8679;</button>
+    <a href="https://wa.me/233554218809" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+    </a>
+    </footer>
+    <style>
+        .cta-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            background: linear-gradient(90deg, #ffb300 60%, #ff8c00 100%);
+            color: #fff;
+            padding: 1.1rem 2.7rem;
+            border-radius: 8px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(255,179,0,0.18);
+            letter-spacing: 1px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .cta-btn:hover {
+            background: linear-gradient(90deg, #283593 60%, #ffb300 100%);
+            transform: scale(1.07);
+        }
+        .counters {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 3rem 0 2rem 0;
+        }
+        .counter-box {
+            background: #fffde7;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(255,179,0,0.13);
+            padding: 1.5rem 2.5rem;
+            text-align: center;
+            min-width: 140px;
+            border: 2px solid #ffb30033;
+        }
+        .counter {
+            font-size: 2.5rem;
+            color: #ffb300;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 0.3rem;
+            transition: color 0.3s;
+        }
+        .counter-box p {
+            font-size: 1.08rem;
+            color: #444;
+            margin: 0.5rem 0 0 0;
+            font-weight: 600;
+        }
+        .testimonials-section {
+            margin: 3rem 0 2rem 0;
+            text-align: center;
+        }
+        .testimonials-section h3 {
+            color: #1a237e;
+            margin-bottom: 1.2rem;
+            font-size: 1.4rem;
+        }
+        .testimonials-carousel {
+            position: relative;
+            min-height: 120px;
+        }
+        .testimonial {
+            display: none;
+            font-size: 1.13rem;
+            color: #444;
+            background: #e3eafc;
+            border-radius: 12px;
+            padding: 1.5rem 1.2rem 1rem 1.2rem;
+            margin: 0 auto;
+            max-width: 520px;
+            box-shadow: 0 4px 16px rgba(40,53,147,0.10);
+            opacity: 0;
+            transform: translateY(40px) scale(0.98);
+            transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+            position: relative;
+        }
+        .testimonial.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            animation: testimonial-fade-in 0.7s cubic-bezier(.4,0,.2,1);
+        }
+        @keyframes testimonial-fade-in {
+            from { opacity: 0; transform: translateY(40px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .testimonial-avatar {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 0.7rem auto;
+            box-shadow: 0 2px 8px #ffb30033;
+            border: 3px solid #fffde7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .testimonial-stars {
+            color: #ffb300;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+            text-align: center;
+            animation: testimonial-stars-pop 1.2s cubic-bezier(.36,.07,.19,.97) infinite alternate;
+        }
+        @keyframes testimonial-stars-pop {
+            0% { transform: scale(1); }
+            60% { transform: scale(1.13); }
+            100% { transform: scale(1); }
+        }
+        .testimonial span {
+            display: block;
+            margin-top: 0.7rem;
+            color: #283593;
+            font-weight: 700;
+        }
+        .testimonial-controls {
+            margin-top: 1rem;
+        }
+        .testimonial-controls button {
+            background: #ffb300;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.4rem;
+            margin: 0 0.7rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .testimonial-controls button:hover {
+            background: #283593;
+        }
+        /* partners-section styles removed */
+        .faq-section {
+            margin: 3rem 0 2rem 0;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: #e3eafc;
+            color: #1a237e;
+            border: none;
+            border-radius: 8px;
+            padding: 1.1rem;
+            font-size: 1.13rem;
+            font-weight: 700;
+            text-align: left;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .faq-question.active, .faq-question:hover {
+            background: #ffb300;
+            color: #fff;
+        }
+        .faq-answer {
+            display: none;
+            background: #fffde7;
+            color: #444;
+            border-radius: 0 0 8px 8px;
+            padding: 1.1rem;
+            margin-top: -0.5rem;
+            font-size: 1.05rem;
+        }
+        .faq-answer.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 999;
+            background: #283593;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            font-size: 2.1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 16px rgba(40,53,147,0.13);
+            transition: background 0.3s, transform 0.2s;
+        }
+        #backToTop:hover {
+            background: #ffb300;
+            transform: scale(1.13);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 40px;
+            left: 40px;
+            z-index: 999;
+            background: #25d366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(37,211,102,0.13);
+            transition: background 0.3s, transform 0.2s;
+            animation: whatsapp-bounce 1.2s cubic-bezier(.36,.07,.19,.97) infinite, whatsapp-ring 2.2s linear infinite;
+        }
+        .whatsapp-float img {
+            width: 38px;
+            height: 38px;
+            filter: brightness(0) invert(1);
+            animation: whatsapp-icon-ring 2.2s linear infinite;
+        }
+        .whatsapp-float:hover {
+            background: #128c7e;
+            transform: scale(1.13);
+        }
+        @keyframes whatsapp-bounce {
+            0%, 100% { transform: translateY(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateY(-8px); }
+            20%, 40%, 60%, 80% { transform: translateY(0); }
+        }
+        @keyframes whatsapp-ring {
+            0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+            80% { box-shadow: 0 0 0 16px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+        @keyframes whatsapp-icon-ring {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(-15deg); }
+            20% { transform: rotate(10deg); }
+            30% { transform: rotate(-10deg); }
+            40% { transform: rotate(6deg); }
+            50% { transform: rotate(-4deg); }
+            60%, 100% { transform: rotate(0deg); }
+        }
+        /* Section dividers */
+        .container section:not(:last-child) {
+            border-bottom: 2px solid #e3eafc;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+        .home-hero {
+            background: rgba(40,53,147,0.07);
+            border-radius: 12px;
+            padding: 2.5rem 1rem 2rem 1rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 8px rgba(40,53,147,0.06);
+        }
+        .gallery {
+            margin-top: 2.5rem;
+        }
+        .gallery img {
+            border: 3px solid #e3eafc;
+        }
+        .about {
+            background: rgba(255,179,0,0.07);
+            border-radius: 12px;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 8px rgba(255,179,0,0.06);
+        }
+        @media (max-width: 900px) {
+            .counters, .partners-slider {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            header, footer {
+                border-radius: 0;
+            }
+        }
+    </style>
+    <script>
+        // Animated counters
+        function animateCounters() {
+            document.querySelectorAll('.counter').forEach(counter => {
+                counter.innerText = '0';
+                const updateCounter = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const current = +counter.innerText;
+                    const increment = Math.ceil(target / 100);
+                    if (current < target) {
+                        counter.innerText = Math.min(current + increment, target);
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+        // Testimonials carousel with fade/slide effect and auto-play
+        let testimonialIndex = 0;
+        let testimonialTimeout;
+        function showTestimonial(idx) {
+            const testimonials = document.querySelectorAll('.testimonial');
+            testimonials.forEach((t, i) => {
+                t.classList.toggle('active', i === idx);
+            });
+            clearTimeout(testimonialTimeout);
+            testimonialTimeout = setTimeout(() => {
+                nextTestimonial();
+            }, 5000); // auto-advance every 5s
+        }
+        function nextTestimonial() {
+            const testimonials = document.querySelectorAll('.testimonial');
+            testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+            showTestimonial(testimonialIndex);
+        }
+        function prevTestimonial() {
+            const testimonials = document.querySelectorAll('.testimonial');
+            testimonialIndex = (testimonialIndex - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(testimonialIndex);
+        }
+        // FAQ accordion
+        function setupFAQ() {
+            document.querySelectorAll('.faq-question').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    this.classList.toggle('active');
+                    answer.classList.toggle('active');
+                });
+            });
+        }
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+        backToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        // Tab navigation (extended)
+        function showTab(event, tabId) {
+            event.preventDefault();
+            document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('.container section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if(tabId === 'home') animateCounters();
+            if(tabId === 'faq') setupFAQ();
+        }
+        // Fade in effect for sections
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.container section').forEach(sec => {
+                sec.addEventListener('transitionend', () => {
+                    sec.style.opacity = 1;
+                });
+            });
+            animateCounters();
+            setupFAQ();
+            showTestimonial(testimonialIndex);
+        });
+        // Gallery image click effect
+        document.querySelectorAll('.gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                window.open(img.src, '_blank');
+            });
+        });
+        // Tab navigation
+        function showTab(event, tabId) {
+            event.preventDefault();
+            document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('.container section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        // Fade in effect for sections
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.container section').forEach(sec => {
+                sec.addEventListener('transitionend', () => {
+                    sec.style.opacity = 1;
+                });
+            });
+        });
+        // Gallery image click effect
+        document.querySelectorAll('.gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                window.open(img.src, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
